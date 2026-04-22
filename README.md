@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project demonstrates hands-on experience in building scalable and automated DevOps pipelines using cloud-native tools.
+This projectdemonstrates hands-on experience in building scalable and automated DevOps pipelines using cloud-native tools.
 
 It showcases an end-to-end DevOps pipeline using modern tools and practices including CI/CD, containerization, Kubernetes orchestration, Infrastructure as Code, and monitoring.
 
@@ -17,12 +17,18 @@ The system automates the process of building, packaging, and deploying an applic
 * **Container Registry:** Docker Hub
 * **Orchestration:** Kubernetes (Minikube)
 * **Package Management:** Helm
-* **Infrastructure as Code:** Terraform (AWS)
+* **Infrastructure as Code:** Terraform (AWS - EC2 & Security Group)
 * **Monitoring:** Prometheus & Grafana
 
 ---
 
 ## Architecture
+
+###  Architecture Diagram
+
+![Architecture](images/Arch.png)
+
+---
 
 ### Workflow
 
@@ -37,36 +43,28 @@ The system automates the process of building, packaging, and deploying an applic
 
 ---
 
-### Architecture Diagram
+## CI/CD Pipeline
 
-```
-Developer
-   ↓
-GitHub Repository
-   ↓
-GitHub Actions (CI)
-   ↓
-Docker Build
-   ↓
-Docker Hub (Image Registry)
-   ↓
-Kubernetes (Minikube Cluster)
-   ↓
-Helm (Deployment)
-   ↓
-Running Application (Pods + Service)
-   ↓
-Prometheus (Metrics Collection)
-   ↓
-Grafana (Visualization)
-```
+![CI/CD Pipeline](images/cicd.png)
+
+---
+
+## Kubernetes Deployment
+
+![Kubernetes Pods](images/pods.png)
+
+---
+
+## Monitoring
+
+![Grafana Dashboard](images/grafana.png)
 
 ---
 
 ## Features
 
 * Automated Docker image build and push using GitHub Actions
-* Infrastructure provisioning using Terraform
+* Infrastructure provisioning using Terraform (EC2 & Security Group)
 * Kubernetes deployment with scaling support
 * Helm-based deployment management
 * Monitoring and observability using Prometheus and Grafana
@@ -93,5 +91,7 @@ Grafana (Visualization)
 
 ---
 
-# Author
+## Author
 Sri Varshini Pulla
+
+---
