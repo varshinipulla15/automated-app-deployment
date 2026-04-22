@@ -1,1 +1,97 @@
-# automated-app-deployment
+# Cloud-Native DevOps Pipeline Project
+
+## Overview
+
+This project demonstrates hands-on experience in building scalable and automated DevOps pipelines using cloud-native tools.
+
+It showcases an end-to-end DevOps pipeline using modern tools and practices including CI/CD, containerization, Kubernetes orchestration, Infrastructure as Code, and monitoring.
+
+The system automates the process of building, packaging, and deploying an application while providing observability through monitoring tools.
+
+---
+
+## Tech Stack
+
+* **CI/CD:** GitHub Actions
+* **Containerization:** Docker
+* **Container Registry:** Docker Hub
+* **Orchestration:** Kubernetes (Minikube)
+* **Package Management:** Helm
+* **Infrastructure as Code:** Terraform (AWS)
+* **Monitoring:** Prometheus & Grafana
+
+---
+
+## Architecture
+
+### Workflow
+
+1. Code is pushed to GitHub
+2. GitHub Actions builds Docker image
+3. Image is pushed to Docker Hub
+4. Kubernetes (Minikube) pulls the image
+5. Helm deploys the application
+6. Service exposes the application
+7. Prometheus collects metrics
+8. Grafana visualizes system performance
+
+---
+
+### Architecture Diagram
+
+```
+Developer
+   ↓
+GitHub Repository
+   ↓
+GitHub Actions (CI)
+   ↓
+Docker Build
+   ↓
+Docker Hub (Image Registry)
+   ↓
+Kubernetes (Minikube Cluster)
+   ↓
+Helm (Deployment)
+   ↓
+Running Application (Pods + Service)
+   ↓
+Prometheus (Metrics Collection)
+   ↓
+Grafana (Visualization)
+```
+
+---
+
+## Features
+
+* Automated Docker image build and push using GitHub Actions
+* Infrastructure provisioning using Terraform
+* Kubernetes deployment with scaling support
+* Helm-based deployment management
+* Monitoring and observability using Prometheus and Grafana
+* Debugged real-world Kubernetes issues (CrashLoopBackOff, probe failures)
+
+---
+
+## Key Learnings
+
+* Built end-to-end CI/CD pipeline
+* Worked with Kubernetes and Helm for deployment
+* Implemented monitoring and observability
+* Debugged Kubernetes issues (CrashLoopBackOff, probes)
+* Understood real-world DevOps workflows
+
+---
+
+## Future Improvements
+
+* Add Continuous Deployment (CD)
+* Use AWS EKS instead of Minikube
+* Implement GitOps (ArgoCD)
+* Add automated testing
+
+---
+
+# Author
+Sri Varshini Pulla
